@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>权重</title>
+
+    <style type="text/css">
+        /* 样式无效的可能：
+            - 语法有误
+            - 选择元素错误
+            - 权重不够
+
+        */
+
+
+
+
+        /*
+            权重规则： 标签权重1， class权重10， id权重100
+
+            权重表达方式： 0000
+
+            类型选择符：0001
+            class选择符：0010
+            id选择符：0100
+            伪类选择符：0010
+            包含选择符：权重之和
+
+            内联样式：1000
+            集成样式：0000
+
+            相同属性才回涉及权重问题，因为会有冲突，需要权重来判断
+        */
+        #head{
+            background: aqua;
+        }
+
+        .view1{
+            background: blue;
+        }
+
+        div{
+            width:100px;
+            height:100px;
+            background:red;
+        }
+
+        /* 0010 */
+        .title{
+            color: white;
+        }
+
+        /* 0010 + 0010 */
+        .view1 .title{
+            color: yellowgreen;
+        }
+
+        /* 0001 + 0010 ,上面那个更大 所以最终是黄绿色*/
+        div .title{
+            color: purple;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 权重 -->
+    <div class="view1" id="head">
+
+    </div>
+
+    <div class="view1">
+        <p class="title" style="color: black;">html</p>     <!-- 这里面 style代表的内联选择符 权重最大-->
+    </div>
+</body>
+</html>

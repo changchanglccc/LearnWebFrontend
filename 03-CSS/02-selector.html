@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02</title>
+
+    <style type="text/css">
+        /*  1. 类型选择符
+
+                语法：
+                    元素（）
+
+        */
+        /* 所以的p标签*/
+        p{
+            color: gray;
+        }
+        h1{
+            background:red;
+        }
+
+        /* 起别名
+            2. 类别选择符（class选择器）  [可重复]
+                语法：
+                    .class名{}
+
+        */
+        .class1{
+            color: white;
+        }
+
+        .class2{
+            color: blue;
+        }
+
+        /* 起别名
+            3. ID选择符（id选择器） [不可重复]
+            语法:
+                #id名{}
+        */
+        #view1{
+            width: 100px;
+            height: 100px;
+            background: aqua;
+        }
+
+        #view2{
+            width: 100px;
+            height: 100px;
+            background: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <p>hello</p>
+    <p>world</p>
+
+    <h1 class="class1">Red</h1>
+    <h1 class="class2">Blue</h1>
+    <h1 class="class1">Another</h1>
+
+    <div id="view1"></div>
+    <div id="view2"></div>
+</body>
+</html>

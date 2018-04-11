@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>其他选择符</title>
+
+    <style type="text/css">
+        /* 5. 伪类选择符（注意顺序）*/
+
+        /* 未链接*/        /* 未失效 当第一次点击过之后 就一直是visited的状态了*/
+        a:link{
+            color: blue;
+        }
+
+        /* 已链接*/
+        a:visited{
+            color:black;
+        }
+
+        /* 鼠标移入*/
+        a:hover{
+            color:green;
+        }
+
+        /* 鼠标按下*/
+        a:active{
+            color:red;
+        }
+
+        /* 6. 通配符 */
+        *{
+           /* 重置样式 */
+        }
+
+    </style>
+</head>
+<body>
+    <a href="http://www.google.com"> Google </a>
+</body>
+</html>

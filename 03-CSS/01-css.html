@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+
+    <style>
+
+        /* CSS 注释方式 */
+
+        /*div{*/
+            /*width: 100px;*/
+            /*height: 100px;*/
+            /*background: red;*/
+        /*}*/
+
+        /* 导入外部样式表 方式一*/
+        /*@import url("01-styles.css");*/       /*在style里面*/
+    </style>
+
+
+    <!--* 导入外部样式表 方式二*-->
+    <link rel="stylesheet" href="01-styles.css">
+</head>
+<body>
+    <!--
+        内部样式表， 内联样式表， 外部样式表
+    -->
+
+    <!--
+        1.内联样式表 ： 写到元素里面的
+    -->
+    <div style="width: 100px;height: 100px; background: red;"></div>
+
+    <!--
+        2.内部样式表 ： 写head 的 style里面去
+    -->
+    <!--<div></div>-->
+
+    <!--3. 外部样式表，
+        @import     只能导入css
+        link标签      还能导入其他内容
+
+        加载顺序不同，link是和页面一起导入的; import是先加载html，再加载css
+
+        兼容性不同   import必须IE5以上
+
+        DOM操作，link可用
+    -->
+    <div></div>
+</body>
+</html>
