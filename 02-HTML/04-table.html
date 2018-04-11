@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+</head>
+<body>
+    <!--
+        tr: 行
+        td: 列 单元格
+
+        width, height, border:边框大小
+        cellspacing: 单元格之间间距
+    -->
+
+    <table width="200" height="200" border="1" cellspacing="0">
+        <tr>
+            <td>1-1</td>
+            <td>1-2</td>
+        </tr>
+
+        <tr>
+            <td>2-1</td>
+            <td>2-2</td>
+        </tr>
+    </table>
+
+    <!--
+        4行6列
+
+        cellpadding: 调整内容的位置
+
+        align: 水平对齐方式 （left/center/right),运用在下列中
+            table
+            tr
+            td
+
+        valign:垂直方向，只能用于tr/td, （top/middle/bottom）
+    -->
+    <table width="300" height="200" border="1" bordercolor="blue"
+           cellspacing="0" cellpadding="20" align="center">
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <!--
+        合并单元格 5行4列
+
+        colspan: 合并列
+        rowspan: 合并行
+    -->
+
+    <table width="300" height="200" border="1" cellspacing="0" cellpadding="20">
+
+        <tr>
+            <td>1</td>
+            <td colspan="2" align="center">2</td>
+            <!--<td>3</td>-->
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <!--<td>1</td>-->
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+
+    </table>
+</body>
+</html>

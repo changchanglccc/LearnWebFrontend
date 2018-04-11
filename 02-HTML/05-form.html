@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+    <!--
+        表单域form
+            name: 表单域名称
+            method: 请求方式get/post
+            action: 提交URL
+    -->
+
+    <form name="test" method="get" action="http://www.google.com">
+        <!-- 1.文本域
+            type： 输入框类型
+            placeholder: 提示文本
+            value: 输入框中的内容
+        -->
+        <p>
+            Account: <input type="text" placeholder="Please enter your email" value="123456" />
+        </p>
+
+        <!-- 2. 密码输入框
+                    type： 输入框类型
+                    placeholder: 提示文本
+                    value: 输入框中的内容
+        -->
+        <p>
+            Password: <input type="password" placeholder="6 digits"/>
+        </p>
+
+        <!-- 3. 单选框（同一组中的只能选择一个）
+                    name: 控制哪一组
+                    checked: 默认选中
+        -->
+        <p>
+            <input type="radio" name="sex" checked="checked"> male
+            <input type="radio" name="sex"> female
+        </p>
+
+
+        <!-- 4. 复选框
+                    name: 控制哪一组
+                    checked: 默认选中
+        -->
+        <p>
+            <input type="checkbox" name="like"> sleep
+            <input type="checkbox" name="like" checked="checked"> eat
+            <input type="checkbox" name="like"> haha
+        </p>
+
+        <!-- 5. 下拉菜单
+                    option: 下拉选项
+        -->
+        <select>
+            <option>montreal</option>
+            <option>laval</option>
+            <option>toronto</option>
+            <option>ottawa</option>
+        </select>
+
+        <!-- 6. 按钮
+                value: 显示
+        -->
+        <p>
+            <input type="button" value="button1">
+            <input type="button" value="button2">
+        </p>
+        <!--<button type="submit">button</button>-->
+
+        <!-- 7. 提交按钮
+                提交到表单域action中填写的
+        -->
+        <p>
+            <input type="submit" value="提交">
+        </p>
+
+        <!--
+            重置按钮
+                重置该按钮对应的表单域中
+        -->
+        <input type="reset" value="重置">
+    </form>
+</body>
+</html>
