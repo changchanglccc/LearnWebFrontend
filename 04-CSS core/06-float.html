@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+
+    <style type="text/css">
+        .box{
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+
+        .view{  /* 方便添加共同的样式 */
+            width: 100px;
+            height: 100px;
+        }
+
+        .view1{
+            background: purple;
+            /* 浮动 ： left、 right、none 
+                   水底浮动到水面 立体层次
+                   三个都左浮动， 效果就是变成水平方向铺开
+                   1. 层级问题
+                   2. 大小问题（容器装不下的时候 特别注意）
+            */
+            float: left;
+        }
+
+        .view2{
+            background: blue;
+            float: left;
+        }
+
+        .view3{
+            background: green;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- 下面这个div有两个别名 view 和 view1 -->
+        <div class="view view1"></div>
+        <div class="view view2"></div>
+        <div class="view view3"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>csscore</title>
+
+    <style type="text/css">
+        .content{
+            width:150px;
+            height: 50px;
+            background: red;
+            color:white;
+
+            text-align: center;
+
+            /* 垂直对齐方式 top/middle/bottom */
+            /*vertical-align: top;*/
+
+            /* 行高， 一行文字的高度
+                多行：行间距
+                单行：调整位置
+                    比如想让单个文字居中， 设置 line-height == height 即可 （行高=容器高度）
+            */
+
+            line-height: 50px;
+
+        }
+
+        .main{
+            width:150px;
+            height: 150px;
+            /*line-height: 30px;*/
+            /* 倍行高 （2倍）
+                和字体大小有关，如字体13px, 2倍行高就是13*2px
+            */
+            /*line-height: 2em;*/
+            /*line-height: 2;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        HTML
+    </div>
+
+    <p class="main">
+        hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+        hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+        hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+        hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+        hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+
+    </p>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>csscore</title>
+
+    <style type="text/css">
+        .content{
+            /*1. 宽度*/
+            width:200px;
+
+            /*2. 高度*/
+            height: 200px;
+
+            /*3. 背景： 颜色名 or 16进制表示 or 三原色RGB*/
+            /*background: red;*/
+            /*background: #800080;*/
+            /*background: rgb(26,162,97);*/
+            background: rgba(26,162,97,0.7);  /* a代表透明度*/
+
+            /*4. 字体颜色*/
+            color: white;
+
+            /*5. 字体大小 默认16px */
+            font-size: 30px;
+
+            /*6. 字体类型*/
+            font-family: "Apple Braille";
+
+            /*7. 加粗
+                bold/bolder/100~900 (500是常规)/ normal
+            */
+            font-weight: 800;
+
+            /*8. 倾斜*/
+            font-style: italic;
+
+            /*9. 字母大小写*/
+            font-variant: all-small-caps;
+
+            /*10. 水平对齐方式  left/right/center/justify 两端对齐*/
+            text-align:justify;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p class="content">
+        你可以不聪明，但你不可以不努力
+        Hello world!
+    </p>
+</body>
+</html>
