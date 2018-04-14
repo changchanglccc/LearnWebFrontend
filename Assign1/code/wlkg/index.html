@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wlkg</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!--
+    1. 设计稿分析
+        - 头部
+        - 导航
+        - 横幅
+        - 新闻1
+        - 新闻2
+        - 底部
+
+    2. 项目工程创建
+        - 创建对应文件夹
+
+    3. 根据模块划分，搭建页面基本框架
+
+    4. 将整体架构展开
+
+    5. 一个个模块填充
+
+    ps截图：
+        - 矩形选框（选中要截取区域）
+        - command + c (复制）
+        - command + n (新建）
+        - command + v (粘贴）
+        - command + s (保存)
+        - 选择保存路径， 保存类型，文件名称
+
+-->
+<body>
+    <!-- 1. 头部 div 一般代表盒子-->
+    <div id="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png">
+            </a>
+        </div>
+        <div class="search">
+            <form>
+                <input type="text" value="SEARCH..." class="text">
+                <input type="submit" class="bt" value="">
+            </form>
+        </div>
+    </div>
+
+    <!-- 2. 导航-->
+    <div id="nav">
+        <ul>
+            <li><a href="#">集团介绍</a> </li>
+            <li><a href="#">产品中心</a> </li>
+            <li><a href="#">卧龙市场</a> </li>
+            <li><a href="#">技术研发</a> </li>
+            <li><a href="#">国际合作</a> </li>
+            <li><a href="#">投资者关系</a> </li>
+            <li><a href="#">新闻资讯</a> </li>
+            <li class="last"><a href="#">人力资源</a> </li>
+
+        </ul>
+    </div>
+
+    <!-- 3. 横幅-->
+    <div id="banner"></div>
+
+    <!-- 4. 新闻-->
+    <div id="news"></div>
+
+    <!-- 5. 底部-->
+    <div id="footer"></div>
+</body>
+</html>
