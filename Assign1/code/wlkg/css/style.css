@@ -87,7 +87,7 @@
 #news{
     width: 999px;
     height: 547px;
-    background: purple;
+    /*background: purple;*/
     margin:0 auto;
 }
 
@@ -190,9 +190,39 @@
 
 
 #news .news-2{
-    width: 999px;
-    height: 305px;
-    background: greenyellow;
+    width: 959px;
+    height: 240px;
+    padding: 30px 20px 35px 20px;
+}
+
+#news .news-2 h3{
+    height: 35px;
+}
+
+#news .news-2 .content{
+    height: 204px;
+}
+
+/* 210*4=810 80*2 = 160*/
+#news .news-2 .content .smallBox{
+    width: 210px;
+    height: 204px;
+    float:left;
+    margin-right: 39px;
+}
+
+#news .news-2 .content .smallBox img{
+    padding-bottom: 12px;
+    float: left;
+}
+
+#news .news-2 .content .smallBox a{
+    height: 61px;
+    line-height: 22px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #555555;
+    text-align: center;
 }
 
 #footer{
