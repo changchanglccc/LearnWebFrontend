@@ -5,23 +5,144 @@
 
 #header{
     width: 1100px;
-    height: 66px;
-    background: red;
+    height: 67px;
+    background: #f2f2f2;
     margin:0 auto;
+}
+
+#header .logo{
+    width: 137px;
+    height: 46px;
+    padding: 13px 0 9px 43px;
+    float: left;
+}
+
+#header .links ul{
+    width: 449px;
+    height: 15px;
+    float: right;
+    margin: 27px 50px 24px 0;
+}
+
+#header .links ul li{
+    list-style: none inside;
+    float:left;
+    margin-left: 36px;
+}
+
+#header .links ul li a{
+    font-size: 13px;
+    text-decoration: none;
+    color:#585858;
 }
 
 #banner{
     width: 1100px;
-    height: 422px;
-    background: gold;
+    height: 423px;
+    /*background: gold;*/
     margin:0 auto;
 }
 
+/*#banner img{*/
+    /*为啥有上方的黄色区域？？？？*/
+    /*answer：上方head区高度有误差，微调即可*/
+/*}*/
+
 #news{
     width: 1100px;
-    height: 719px;
-    background: blue;
+    height: 718px;
+    /*background: blue;*/
     margin:0 auto;
+}
+
+#news .news-1{
+    /*width: 1100px;*/
+    width: 1000px;
+    height: 288px;
+    background: #f2f2f2;
+    padding:0 50px;
+}
+
+#news .news-1 .services{
+    width: 460px;
+    height: 288px;
+    /*background: blue;*/
+    float:left;
+    padding-right: 40px;
+}
+
+#news .news-1 .services img{
+    margin-bottom: 9px;
+}
+
+#news .news-1 .services .section1{
+    width: 460px;
+    height: 56px;
+    margin-bottom: 57px;
+}
+
+#news .news-1 .services a{
+    width: 110px;
+    text-decoration: none;
+}
+
+#news .news-1 .services a span{
+    font-size: 15px;
+    color: #5ec3ed;
+}
+
+#news .news-1 .services p{
+    width: 350px;
+    line-height: 22px;
+    font-size: 15px;
+    color: #666666;
+    float: right;
+}
+
+#news .news-1 .cases{
+    width: 490px;
+    height: 288px;
+    background: grey;
+    float:left;
+}
+
+#news .news-2 .cases img{
+    width: 89px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+/*#news .news-2 .cases ul li{*/
+    /*list-style: none inside;*/
+    /*float:left;*/
+/*}*/
+
+#news .news-2{
+    width: 1000px;
+    height: 220px;
+    background: red;
+    padding: 65px 50px 145px 50px;
+}
+
+#news .news-2 .view1{
+    width: 300px;
+    height:220px;
+    background: blue;
+    float:left;
+}
+
+#news .news-2 .view2{
+    width: 299px;
+    height:220px;
+    background: gold;
+    float:left;
+}
+
+#news .news-2 .view3{
+    width: 401px;
+    height:220px;
+    background: purple;
+    float:left;
 }
 
 #footer{
