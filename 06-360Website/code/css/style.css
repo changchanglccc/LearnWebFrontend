@@ -120,34 +120,142 @@
 #news .news-2{
     width: 1000px;
     height: 220px;
-    background: red;
+    background: #f2f2f2;
     padding: 65px 50px 145px 50px;
 }
 
-#news .news-2 .view1{
+#news .news-2 .section1{
     width: 300px;
     height:220px;
-    background: blue;
+    /*background: yellowgreen;*/
     float:left;
 }
 
-#news .news-2 .view2{
+#news .news-2 .section1 .view1{
+    width:300px;
+    line-height: 30px;
+}
+
+#news .news-2 .section1 .view1 h3{
+    color:#232323;
+}
+
+#news .news-2 .section1 .view2{
+    padding-right: 10px;
+}
+
+#news .news-2 .section1 .view2 a{
+    float: right;
+    text-decoration: none;
+}
+
+#news .news-2 .section1 .view2 span{
+    font-size: 14px;
+    color: #dddddd;
+}
+
+#news .news-2 .section1 .view3{
+    width:258px;
+    height: 145px;
+}
+
+#news .news-2 .section1 .view3 p{
+    font-size: 12px;
+    line-height: 21px;
+    color:#7d7d7d;
+}
+
+#news .news-2 .section2{
     width: 299px;
     height:220px;
     background: gold;
     float:left;
 }
 
-#news .news-2 .view3{
+#news .news-2 .section3{
     width: 401px;
     height:220px;
     background: purple;
     float:left;
 }
 
+
+
+
+
 #footer{
-    width: 1100px;
-    height: 230px;
-    background: green;
+    width: 980px;
+    height: 160px;
+    background: #383838;
     margin:0 auto;
+    padding:40px 50px 30px 70px;
+}
+
+#footer .section1{
+    width:900px;
+    height:118px;
+    margin-bottom: 30px;
+}
+
+#footer .section1 .view1{
+    width: 480px;
+    height: 120px;
+    /*background: gray;*/
+    float: left;
+}
+
+#footer .section1 .view1 .part1{
+    height:24px;
+    line-height: 24px;
+}
+
+#footer .section1 .view1 .part1 ul{
+    list-style: none inside;
+
+}
+
+#footer .section1 .view1 .part1 ul li{
+    float: left;
+}
+
+#footer .section1 .view1 .part1 ul li a{
+    text-decoration: none;
+    color: #bbbbbb;
+}
+
+#footer .section1 .view1 .part1 ul li span{
+    margin: 0 15px;
+}
+
+#footer .section1 .view1 .part2 .p1{
+    line-height: 28px;
+}
+
+#footer .section1 .view1 .part2 p {
+    font-size: 13px;
+    color: #828282;
+    line-height: 23px;
+}
+
+#footer .section1 .view2{
+    width: 180px;
+    height: 50px;
+    /*background: #5288a0;*/
+    float: right;
+}
+
+#footer .section1 .view2 .p1{
+    font-size: 15px;
+    color:#bbbbbb
+}
+
+#footer .section1 .view2 .p2{
+    font-size: 22px;
+    color:#bbbbbb
+}
+
+#footer .section2{
+    height:17px;
+    text-align: center;
+    color:#7c7c7c;
 }
