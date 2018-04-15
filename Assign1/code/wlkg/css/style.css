@@ -228,7 +228,7 @@
 #footer{
     width: 999px;
     height: 332px;
-    background: blue;
+    /*background: blue;*/
     margin:0 auto;
 }
 
@@ -289,18 +289,45 @@
 }
 
 #footer .section2{
-    width: 999px;
+    width: 959px;
     height: 82px;
-    background: gold;
+    /*background: gold;*/
+    padding: 0 20px;
 }
 
 #footer .section2 .view1{
+    width: 290px;
+    /*height: 82px;*/
+    height: 56px;
     float: left;
-    background: greenyellow;
+    padding-top: 23px;
+    font-size: 12px;
+}
+
+#footer .section2 .view1 a{
+    text-decoration: none;
+    color: #888888;
+}
+
+#footer .section2 .view1 span{
+    font-size: 12px;
+    color: #888888;
+    padding:0 5px;
 }
 
 #footer .section2 .view2{
+    width: 630px;
+    height: 56px;
     float: right;
-    background: gold;
+    /*background: blue;*/
+    padding-top: 23px;
+    font-size: 12px;
+    color: #888888;
+    text-align: right;
 }
+
+#footer .section2 .view2 {
+    text-decoration: none;
+}
+
 
