@@ -13,7 +13,8 @@
                 <img src="../img/logo.png">
             </a>
         </div>
-        <div class="links">
+
+        <div class="links"> <!--还可以直接用五个a标签  多个实现办法-->
             <ul>
                 <li><a href="#">案例作品</a></li>
                 <li><a href="#">网站建设</a></li>
@@ -34,11 +35,13 @@
                 <a href="#">
                     <img src="../img/services-1.png">
                 </a>
+
                 <div class="section1">
                     <a href="#"><span>简约版套餐</span></a>
                     <p>企业首选的网站建设方案，成本低，标准设计页面，以最简洁的形式
                     反应企业简介、服务内容、产品信息和联系方式等；</p>
                 </div>
+
                 <div class="section2">
                     <a href="#"><span>基础项套餐</span></a>
                     <p>适合大中小型企业，强调网站风格与动画相结合，直观生动的页面体现，
@@ -51,18 +54,16 @@
                     <img src="../img/cases.png">
                 </a>
 
-                <!--<div class="sample">-->
-                    <!--<ul>-->
-                        <!--<li><a href="#"><img src="../img/services.png"></a></li>-->
-                        <!--<li><a href="#"><img src="../img/services.png" style="padding: 0 1px;"></a></li>-->
-                        <!--<li><a href="#"><img src="../img/services.png"></a></li>-->
-                    <!--</ul>-->
-                <!--</div>-->
+                <div class="sample">
+                    <a href="#"><img src="../img/services.png"></a>
+                    <a href="#"><img src="../img/services.png" style="margin: 0 1px;"></a>
+                    <a href="#"><img src="../img/services.png"></a>
+                </div>
             </div>
         </div>
 
         <div class="news-2">
-            <div class="section1">
+            <div class="section section1">
                 <div class="view1">
                     <h3>关于我们</h3>
                 </div>
@@ -79,11 +80,11 @@
                         向企业目标客户定向传播品牌信息满足客户获取信息、消费等需求
                     </p>
                 </div>
-            </div>
+            </div> <!-- 给大家一个共同的别名section 可以用来设置相同的样式 更简洁 回头再重做一次-->
 
-            <div class="section2"></div>
+            <div class="section section2"></div><!-- 图片居中有点不一样 这个是跟元素类型相关，所以目前用margin来调位置-->
 
-            <div class="section3"></div>
+            <div class="section section3"></div><!-- 竖线是背景， 放在公共section中，并且对section3的删除 background:url("") no-repeat right bottom;-->
         </div>
     </div>
 

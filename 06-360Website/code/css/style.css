@@ -60,7 +60,7 @@
     width: 1000px;
     height: 288px;
     background: #f2f2f2;
-    padding:0 50px;
+    padding:0 40px;
 }
 
 #news .news-1 .services{
@@ -103,19 +103,16 @@
     width: 490px;
     height: 288px;
     background: grey;
-    float:left;
+    float:right;
+}
+
+#news .news-2 .cases .sample{
+    padding-top: 21px;
 }
 
 #news .news-2 .cases img{
-    width: 89px;
-    height: 50px;
-    margin-bottom: 20px;
+    float:left;
 }
-
-/*#news .news-2 .cases ul li{*/
-    /*list-style: none inside;*/
-    /*float:left;*/
-/*}*/
 
 #news .news-2{
     width: 1000px;
