@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .view1{
+            width: 100px;
+            height: 100px;
+            background: red;
+
+            /*display: inline-block;*/
+
+            /* 类似于给元素添加了display：block */
+            float:left;
+        }
+
+        .view2{
+            width: 100px;
+            height: 100px;
+            background: blue;
+
+            /*display: inline-block;*/
+            float:left;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        块元素 block： (一般用来当做容器，盒子用来装东西的)
+            div, dl, dt, dd, ol, ul, h1-h6, form, hr, table, tr, td...
+
+        行内元素 inline:
+            a， span, i, b, string, em, del...
+
+        行内块元素 inline-block:
+            img, input, p
+
+        当不确定的时候，就设置两个元素看看， 然后再设置宽度高度来看看
+    -->
+    <span class="view1">view1</span>
+    <span class="view2">view2</span>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03</title>
+
+    <style type="text/css">
+        .info1{
+            width: 300px;
+            height: 20px;
+            background: red;
+
+            /* 文本溢出属性： 注意使用方法*/
+            /*text-overflow: clip;*/ /*未生效*/
+
+            /* 运用回来*/
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip;    /* 才生效； 其实用js也可以处理*/
+        }
+
+        ul li{
+            /* 1. 给盒子设置宽度*/
+            width: 300px;
+            /* 2. 强制显示成一行*/
+            white-space: nowrap;
+            /* 3. 将超出部分隐藏*/
+            overflow: hidden;
+
+            /* 4. 文本溢出属性    : 指代超出部分的样式显示成什么*/
+            text-overflow: ellipsis;    /* 显示成生省略号*/
+
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>  <!-- 新闻中常见-->
+    <p class="info1">
+        Test test test, test hahahhahaahhah.Test test test, test hahahhahaahhah.Test test test, test hahahhahaahhah.ahahhahaahhah.Test test test, test hahahhahaahhah.
+        </p>
+
+    <br>
+    <ul>
+        <li><a href="#">111111,12456789okjhgfdswertyhjkl;111111,12456789okjhgfdswertyhjkl111111,12456789okjhgfdswertyhjkl111111,12456789okjhgfdswertyhjkl Test test test, test hahahhahaahhah.Test test test, test hahahhahaahhah.Test test test, test hahahhahaahhah.ahahhahaahhah.Test test test, test hahahhahaahhah.
+            Test test test, test hahahhahaahhah.Test test test, test hahahhahaahhah.Test test test, test hahahhahaahhah.ahahhahaahhah.Test test test, test hahahhahaahhah. Test test test, test hahahhahaahhah.Test test test, test hahahhahaahhah.Test test test, test hahahhahaahhah.ahahhahaahhah.Test test test, test hahahhahaahhah. Test test test, test hahahhahaahhah.Test test test, test hahahhahaahhah.Test test test, test hahahhahaahhah.ahahhahaahhah.Test test test, test hahahhahaahhah.</a></li>
+        <li><a href="#">111111,12456789okjhgfdswertyhjkl;111111,12456789okjhgfdswertyhjkl111111,12456789okjhgfdswertyhjkl111111,12456789okjhgfdswertyhjkl</a></li>
+        <li><a href="#">111111,12456789okjhgfdswertyhjkl;111111,12456789okjhgfdswertyhjkl111111,12456789okjhgfdswertyhjkl111111,12456789okjhgfdswertyhjkl</a></li>
+        <li><a href="#">111111,12456789okjhgfdswertyhjkl;111111,12456789okjhgfdswertyhjkl111111,12456789okjhgfdswertyhjkl111111,12456789okjhgfdswertyhjkl</a></li>
+        <li><a href="#">111111,12456789okjhgfdswertyhjkl;111111,12456789okjhgfdswertyhjkl111111,12456789okjhgfdswertyhjkl111111,12456789okjhgfdswertyhjkl</a></li>
+
+    </ul>
+</body>
+</html>

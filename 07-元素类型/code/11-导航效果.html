@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11</title>
+
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav{
+            width: 1000px;
+            height: 40px;
+            margin: 30px auto 0;
+            border-bottom: 1px solid black;
+            padding-left: 40px;
+        }
+
+        .nav li{
+            float: left;
+            list-style: none;
+        }
+
+        .nav li a{      /* 如果发现导航按钮的大小不一致，那肯定是用padding值撑开的*/
+            padding: 0 15px;
+            height: 35px;
+            display: block;
+            text-decoration: none;
+
+            text-align: center;
+            line-height: 35px;
+            color: gray;
+
+            border: 1px solid gray;
+            border-bottom: none;
+            margin-right: 10px;
+            background: #f7f7f7;
+
+            /* 整体往下偏移*/
+            margin-top: 4px;
+        }
+
+        .nav li a:hover{
+            height:40px;
+            margin-top: 0;
+            line-height: 40px;
+            background: white;
+            border-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">tab one</a></li>
+            <li><a href="#">tab one</a> </li>
+            <li><a href="#">tab one</a> </li>
+            <li><a href="#">tab one</a> </li>
+            <li><a href="#">tab one</a> </li>
+        </ul>
+    </div>
+</body>
+</html>

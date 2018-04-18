@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14</title>
+
+    <style type="text/css">
+        p{
+            text-align: center;
+        }
+
+        p img{
+            vertical-align: middle;
+        }
+
+        /*
+            .box 是外层盒子
+            img 是要设置居中的内容
+            span是参考 （转成inline-block类型）
+
+            inline-block支持 text-align、 vertical-align
+
+            1. 将span，img设成inline-block
+
+            2. img和span设置vertical-align: middle;
+
+            3. .box 设置text-align:center;
+
+            4.  span, 宽度为0 不显示； 高度是100% 和父元素一致
+
+            5.  span只是个参考 不需要显示
+        */
+
+        .box{
+            /*width: 300px;*/
+            /*height: 300px;*/
+
+            width: 500px;
+            height: 500px;
+            background: red;
+
+            text-align: center;
+        }
+
+        .box span{
+            /*width: 5px;*/
+            width: 0;
+            /*height: 300px;*/
+            height: 100%;
+            background: blue;
+            display: inline-block;
+
+            vertical-align: middle;
+        }
+
+        .box img{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        原理：inline-block 支持 text-align 和 vertical-align
+    -->
+
+    <p>
+        段落标签
+        <img src="../img/bg.png">
+    </p>
+
+    <br>
+
+    <div class="box">
+
+        <!-- 参考 -->
+        <span></span>
+
+        <!-- 显示内容 -->
+        <img src="../img/bg.png">
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07</title>
+
+    <style type="text/css">
+        .box{
+            width: 884px;
+            height: 400px;
+            background: url("../img/bg.gif");
+            margin: 0 auto;
+        }
+
+        /* 图片会等比例缩放
+            600：400=3：2
+
+            65--》43； 所以要手动设置高度
+        */
+        .box img{
+            width: 65px;
+            height: 400px;
+
+            /*display: block;   去掉默认间距的同时 但是会换行*/
+            float: left;
+            border-right: 2px solid white;
+        }
+
+        .box img:hover{
+            width: 600px;   /*用 hover控制鼠标移入；设置成原图宽度就行啦*/
+        }
+    </style>
+</head>
+<body>
+
+    <!-- block， inline-block 默认都会有间距的 -->
+    <div class="box">
+        <img src="../img/child1.jpg">
+        <img src="../img/child2.jpg">
+        <img src="../img/child3.jpg">
+        <img src="../img/child4.jpg">
+        <img src="../img/child5.jpg">
+    </div>
+</body>
+</html>

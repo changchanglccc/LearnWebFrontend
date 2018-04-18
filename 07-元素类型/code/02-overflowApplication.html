@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overflowApplication</title>
+
+    <style type="text/css">
+        .view1{
+            width: 300px;
+            height: 100px;
+            background: red;
+            margin: 30px;
+            float: left;
+        }
+
+        .view2{
+            width: 300px;
+            height: 100px;
+            background: blue;
+            margin:50px;
+            float: left;
+        }
+
+        .box{
+            width: 400px;
+            height: 400px;
+            background: red;
+
+            /* 2. 避免受到smallbox影响， 添加overflow*/
+            overflow: hidden;
+        }
+
+        .smallBox{
+            width: 200px;
+            height: 200px;
+            background: blue;
+
+            margin:100px;   /* 对于smallbox的垂直方向没有生效，反而影响到box的位置！！！*/
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. 问题1: 上下都有margin值时，取最大的那个值
+           margin-bottom: 30px;
+           margin-top:50px;
+
+            解决问题:
+                1) 添加浮动：float
+    -->
+
+    <!--<div class="view1"></div>-->
+    <!--<div class="view2"></div>-->
+
+    <div class="box">
+        <div class="smallBox"></div>
+    </div>
+
+
+</body>
+</html>

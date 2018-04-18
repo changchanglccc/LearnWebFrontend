@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05</title>
+
+    <style type="text/css">
+
+        /* 元素类型 inline: 不可以设置宽度高度*/
+        span{
+            width: 100px;
+            height: 100px;
+            background: red;
+            color: white;
+            font-size: 30px;
+
+            text-align: center;
+            line-height: 100px;
+
+            /* 改变元素类型，改成inline-block 元素，这样既保证内容在一行中 又可以设置宽度高度（根据需求来改）*/
+            display: inline-block;
+        }
+
+        b{
+            font-size: 50px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!--
+        块状元素block、行内元素inline、行内块元素inline-block
+    -->
+
+    <span>15</span>
+    <b>:</b>
+    <span>22</span>
+</body>
+</html>
